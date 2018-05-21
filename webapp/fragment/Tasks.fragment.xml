@@ -1,0 +1,67 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<Dialog id="tasksDialog" title="{i18n>titleTask}">
+		<VBox class="sapUiSmallMargin">
+			<f:Form id="formTasks" editable="true">
+				<f:layout>
+					<f:ResponsiveGridLayout singleContainerFullSize="true"/>
+				</f:layout>
+				<f:formContainers>
+					<f:FormContainer>
+						<f:formElements>
+							<f:FormElement label="{i18n>labelTitle}">
+								<f:fields>
+									<Input id="titleInput"/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>labelDescription}">
+								<f:fields>
+									<Input id="descInput"></Input>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>labelStatus}">
+								<f:fields>
+									<Select id="statusSelect" selectedKey="{0}">
+										<items>
+											<core:Item text="Defined" key="0"/>
+											<core:Item text="In Progress" key="1"/>
+											<core:Item text="Done" key="2"/>
+										</items>
+									</Select>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>labelPriority}">
+								<f:fields>
+									<Select id="prioritySelect" selectedKey="{0}">
+										<items>
+											<core:Item text="Low" key="0"/>
+											<core:Item text="Normal" key="1"/>
+											<core:Item text="High" key="2"/>
+											<core:Item text="Urgent" key="3"/>
+										</items>
+									</Select>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement>
+								<Panel id="panelComment" class="sapUiContentPadding" headerText="{i18n>titleComments}">
+									<content>
+										<FeedInput post="onCommentPost"/>
+										<List id="listComments" noDataText="{i18n>ObjectCommentNoData}" showSeparators="Inner" items="{ path: 'Data>/Comments'}">
+											<FeedListItem info="User" text="{path: 'Data>title'}"/>
+										</List>
+									</content>
+								</Panel>
+							</f:FormElement>
+							<f:FormElement>
+								<f:fields>
+									<Button text="{i18n>buttonSave}" type="Accept" press="onSaveTaskPressed"></Button>
+									<Button text="{i18n>buttonDelete}" type="Reject" press="onDeleteTaskPressed"></Button>
+									<Button text="{i18n>buttonCancel}" type="Emphasized" press="onCancelTaskPressed"></Button>
+								</f:fields>
+							</f:FormElement>
+						</f:formElements>
+					</f:FormContainer>
+				</f:formContainers>
+			</f:Form>
+		</VBox>
+	</Dialog>
+</core:FragmentDefinition>

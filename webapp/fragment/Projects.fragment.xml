@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog id="projectsDialog" title="{i18n>titleProject}">
+		<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+			<items>
+				<Input id="projectInput" placeholder="{i18n>inputProject}" type="Text" required="true" width="20rem"></Input>
+				<Button width="20rem" text="{i18n>buttonSave}" type="Emphasized" press="onSaveProjectPressed"></Button>
+				<Button width="20rem" text="{i18n>buttonCancel}" type="Reject" press="onCancelProjectPressed"></Button>
+			</items>
+		</VBox>
+	</Dialog>
+</core:FragmentDefinition>

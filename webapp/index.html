@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>Task Management System</title>
+
+		<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/1.54.3/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m,sap.ui.table,sap.ui.commons"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async"
+			data-sap-ui-resourceroots='{"com.taskman": "./"}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+		    //load jquery libraries for drag and drop
+			$.sap.require('sap.ui.thirdparty.jqueryui.jquery-ui-core');
+			$.sap.require('sap.ui.thirdparty.jqueryui.jquery-ui-widget');
+			$.sap.require('sap.ui.thirdparty.jqueryui.jquery-ui-mouse');
+			$.sap.require('sap.ui.thirdparty.jqueryui.jquery-ui-draggable');
+			$.sap.require('sap.ui.thirdparty.jqueryui.jquery-ui-droppable');
+			$.sap.require('sap.ui.thirdparty.jqueryui.jquery-ui-sortable');
+	
+			sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "com.taskman"
+					})
+				}).placeAt("content");
+			});
+
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>

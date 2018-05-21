@@ -1,0 +1,121 @@
+{
+	"Projects": [{
+		"projectId": "0",
+		"code": "abap development",
+		"title": "ABAP Development"
+	}, {
+		"projectId": "1",
+		"code": "ui5 development",
+		"title": "UI5 Development"
+	}, {
+		"projectId": "2",
+		"code": ".net development",
+		"title": ".NET Development"
+	}],
+	"States": [{
+		"stateId": "0",
+		"title": "Defined",
+		"color": ""
+	}, {
+		"stateId": "1",
+		"title": "In Progress",
+		"color": ""
+	}, {
+		"stateId": "2",
+		"title": "Done",
+		"color": "Green"
+	}],
+	"Priority": [{
+		"priorityId": "0",
+		"title": "Low"
+	}, {
+		"priorityId": "1",
+		"title": "Normal"
+	}, {
+		"priorityId": "2",
+		"title": "High"
+	}, {
+		"priorityId": "4",
+		"title": "Urgent"
+	}],
+	"Comments": [{
+		"projectId": "0",
+		"taskId": "0",
+		"commentId": "0",
+		"title": "Deadline: 01.02.2018"
+	}, {
+		"projectId": "0",
+		"taskId": "1",
+		"commentId": "1",
+		"title": "Should talk to client before development"
+	}, {
+		"projectId": "1",
+		"taskId": "2",
+		"commentId": "2",
+		"title": "ASAP"
+	}, {
+		"projectId": "1",
+		"taskId": "2",
+		"commentId": "3",
+		"title": "Deadline: 08.09.2018"
+	}, {
+		"projectId": "2",
+		"taskId": "3",
+		"commentId": "4",
+		"title": "Deadline: 07.08.2018"
+	}, {
+		"projectId": "2",
+		"taskId": "3",
+		"commentId": "5",
+		"title": "Deadline: 10.11.2012"
+	}],
+	"Tasks": [{
+		"projectId": "0",
+		"taskId": "0",
+		"stateId": "2",
+		"priorityId": "1",
+		"title": "ALV Report",
+		"description": "Fill ALV with SFLIGHT table",
+		"commentId": "0"
+	}, {
+		"projectId": "0",
+		"taskId": "1",
+		"stateId": "1",
+		"priorityId": "3",
+		"title": "HR Development",
+		"description": "HR Payroll development",
+		"commentId": "1"
+	}, {
+		"projectId": "1",
+		"taskId": "2",
+		"stateId": "0",
+		"priorityId": "2",
+		"title": "Personel reports for Managers",
+		"description": "Transform ABAP reports into Fiori applications",
+		"commentId": "2"
+	}, {
+		"projectId": "1",
+		"taskId": "3",
+		"stateId": "1",
+		"priorityId": "0",
+		"title": "Leave request reports",
+		"description": "Make request from mobile application",
+		"commentId": "3"
+	}, {
+		"projectId": "2",
+		"taskId": "4",
+		"stateId": "2",
+		"priorityId": "1",
+		"title": "Server Development",
+		"description": "Backend server for mobile application",
+		"commentId": "4"
+	}, {
+		"projectId": "2",
+		"taskId": "5",
+		"stateId": "0",
+		"priorityId": "2",
+		"title": "Performance Improvements",
+		"description": "Improve performance according to test results",
+		"commentId": "5"
+	}]
+}

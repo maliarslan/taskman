@@ -1,0 +1,20 @@
+<mvc:View controllerName="com.taskman.controller.Login" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+						<items>
+							<Image src="https://www.vistex.com/wp-content/themes/sass-wordpress-bootstrap-master/library/images/vistex-inc.svg" class="logImg"
+								densityAware="false" width="20rem" alt="{i18n>imageAlt}"></Image>
+							<Input id="userInput" placeholder="{i18n>inputUserName}" type="Text" required="true" width="20rem"></Input>
+							<Input id="passwordInput" placeholder="{i18n>inputPassword}" type="Password" required="true" width="20rem"></Input>
+							<Button width="20rem" text="{i18n>buttonLogin}" type="Emphasized" press="onLoginPressed"></Button>
+						</items>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
